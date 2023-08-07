@@ -28,3 +28,51 @@ writerStream.on('error', function(err){
    console.log(err.stack);
 });
 ```
+
+## 读取文件
+```javascript
+fs.readFile(file, [options], callback)
+```
+
+## 文件重命名与移动
+```javascript
+fs.rename(oldPath, newPath, callback)
+```
+
+## 文件删除
+```javascript
+fs.unlink(path, callback)
+```
+调用rm方法
+```javascript
+fs.rm(path, {recursive: true}, callback)
+```
+
+## 文件夹操作
+```javascript
+fs.mkdir(path, [options], callback)
+```
+递归创建文件夹
+```javascript
+fs.mkdir(path, {recursive: true}, callback)
+```
+读取文件夹
+```javascript
+fs.readdir(path, [options], callback)
+```
+
+## 删除文件夹
+```javascript
+fs.rm(path, callback)
+```
+递归删除
+```javascript
+fs.rm(path, {recursive: true}, callback)
+```
+
+## 查看资源信息
+```javascript
+fs.stat(path, callback)
+```
+
+
